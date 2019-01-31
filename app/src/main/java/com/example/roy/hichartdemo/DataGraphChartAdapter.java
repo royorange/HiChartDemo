@@ -29,11 +29,6 @@ public class DataGraphChartAdapter extends RecyclerView.Adapter<BindingViewHolde
         notifyDataSetChanged();
     }
 
-    @Override
-    public long getItemId(int position) {
-        return data.get(position).hashCode();
-    }
-
     @NonNull
     @Override
     public BindingViewHolder<ItemChartListBinding> onCreateViewHolder(@NonNull ViewGroup viewGroup, int position) {
